@@ -1,0 +1,120 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Bagaimana Kabarmu", "Adakah Orang?","Hey","P", "Hallo", "permisi"],
+     "responses": ["Hallo Juga", "Senang Bertemu Denganmu Lagi", "oh, halo. Adakah Yang Bisa Saya Bantu?"],
+     "context": [""]
+    },
+        {"tag": "thanks",
+     "patterns": ["Terimakasih", "Makasih", "Sangat Membantu, Terima kasih", "OK", "Terimakasih sudah membantu"],
+     "responses": ["Senang Membantu!", "Kapanpun!", "Dengan Senang Hati"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [ ],
+     "responses": ["Mohon Maaf, kami tidak mengerti maksud anda", "tolong jelaskan lebih detail"],
+     "context": [""]
+    },
+    {"tag": "layar mati ketika menerima panggilan",
+     "patterns": ["layar hp saya mati ketika menerima telpon","layar hp mati ketika menerima panggilan"],
+     "responses": ["Sepertinya masalah anda terletak pada layar yang terangkat sehingga sensor proximity terganggu, solusinya adalah anda bisa memberikan lem agar sensor proximity dapat berkerja dengan normal. atau anda bisa langsung mengganti lcd lama anda ke lcd yang baru"],
+     "context": [""]
+    },
+    {"tag": "Sensor Fingerprint",
+     "patterns": ["Fingerprint saya tidak merespon","Fingerprint hp saya tidak bisa","sidik jadi saya tidak terbaca"],
+     "responses": ["Masalah itu biasanya terjadi karena konektor fingerprint anda bermasalah, jika anda ragu untuk membongkar hp anda dan mengecek konektor fingerprint, maka anda dapat membawa hp anda ke service center terdekat"],
+     "context": [""]
+    },
+    {"tag": "laptop Matot",
+     "patterns": ["laptop saya mati total","laptop saya tidak dapat menyala" ],
+     "responses": ["Mohon Maaf, Jika masalah anda mati total. maka anda harus ke service center terdekat"],
+     "context": [""]
+    },
+    {"tag": "Laptop Dinyalakan Mati Lagi",
+     "patterns": ["laptop mati lagi ketika dinyalakan","laptop nyala sebentar lalu mati lagi"],
+     "responses": ["Jika masalah anda adalah ketika laptop anda menyala lalu mati lagi. biasanya disebabkan oleh konektor baterai, coba nyalakan laptop anda dengan menggunakan charger. jika menyala, maka dapat dipastikan masalah anda adalah pada konektor baterai. jika masalah tetap terjadi, coba cek system pendingin laptop. jika tetap terjadi, anda bisa langsung membawa laptop anda ke service center terdekat"],
+     "context": [""]
+    },
+
+    {
+        "tag" : "bootloop",
+        "patterns":["nyala animasi , tidak masuk menu","hp menyala , namun mentok logo", "mentok logo", "tidak masuk menu"],
+        "responses":[
+          "Masalah ini disebabkan beberapa faktor , faktor pertama corrupnya firmware yang ada di dalam perangkat , solusinya re-flash ulang perangkat dengan tool yang dipakai spesifik sesuai merk hp , jika masalah tetap terjadi , biasanya masalah diakibatkan oleh chip memori yang sudah usang , disarankan untuk mengganti dengan chip yang baru"
+          ],
+        "context":[""]
+      },
+  
+      {
+        "tag":"kamera tidak bisa dibuka",
+        "patterns":["kamera galat", "kamera tidak bisa dibuka", "muncul error kamera bermasalah ketika kamera dibuka"],
+        "responses":["Coba menginstall kamera aplikasi pihak ketiga yang ada di play store , jika kamera tetap tidak bisa dibuka , coba bongkar hp , pastikan flexibel kamera sudah terpasang pada soket dan fisik dari kamera tidak mengalami kecacatan, jika dirasa ada bagian kamera yang rusak , ganti dengan menggunakan modul kamera yang baru"
+          ],
+        "context":[""]
+      },
+  
+      {
+        "tag":"kamera hitam / blur",
+        "patterns":["kamera tidak jelas", "kamera hitam", "kamera hp saya tidak bisa fokus", "kamera hp saya sering ngeblur", "kamera hp saya hanya muncul hitam"],
+        "responses":["Lihat lensa kamera , pastikan tidak ada debu yang menghalangi kamera atau objek lain , jika dirasa kamera bersih namun tetap blur / blank , coba cek fleksibel kamera dan socket kamera kemudian ganti dengan modul kamera yang baru"],
+        "context":[""]
+      },
+  
+      {
+        "tag": "hilang sinyal",
+        "patterns":["sinyal saya hilang","hp saya tidak muncul sinyal","sinya di hp saya hilang"],
+        "responses":["pastikan anda sudah berada di wilayah yang terjangkau sinyal , cobalah menggunakan kartu sim dari provider lain , jika masalah masih terjadi , cek IMEI di website kemenperin ,perangkat yang tidak terdaftar menyebabkan perangkat bisa saja kehilangan sinyal"],
+        "context":[]
+      },
+  
+      {
+        "tag": "koneksi wifi",
+        "patterns": ["hp saya tidak bisa konek wifi", "koneksi wifi lemah", "hp saya terkoneksi dengan wifi namun tidak ada internet"],
+        "responses": ["Jika terkoneksi ke wifi namun tidak ada internet , coba cek wifi dengan perangkat lain ,jika perangkat sulit terkoneksi dengan wifi coba reset pengaturan jaringan di perangkat anda , jika masalah berlanjut coba untuk membongkar hp dan pastikan konektor ke bagian antenna wifi tidak bermasalah"],
+        "context": []
+      },
+    {"tag": "Garis pada layar HP",
+     "patterns": ["ada garis garis pada layar hp saya","muncul beberapa garis di LCD saya", "LCD HP garis garis"],
+     "responses": ["hal ini dapat disebabkan oleh beberapa faktor, salah satunya adalah konektor yang longgar. jika hal tersebut terjadi, anda bisa membongkar hp anda dan memastikan konektor LCD anda terpasang dengan baik. jika masalah anda tetap terjadi, maka anda bisa mengganti LCD anda"],
+     "context": [""]
+    },
+    {"tag": "Aplikasi HP Tidak Dapat Dibuka ",
+     "patterns": ["Aplikasi Hp Tidak Bisa Dibuka"],
+     "responses": ["Jika Aplikasi Tidak Bisa Dibuka, bisa jadi versi aplikasi anda tidak compatible dengan versi android anda"],
+     "context": [""]
+    },
+    {"tag": "Layar Hp Mati",
+     "patterns": ["Kenapa Layar Hp Tiba-Tiba Mati", "Layar Hp saya Mati","Layar Hp Saya Hitam"],
+     "responses": ["Hal itu bisa disebabkan layar HP yang rusak atau pecah, kemudian juga karena HP error dan lagging.HP yang terlalu panas, misalnya karena overheating atau karena terlalu lama berada di bawah sinar matahari juga bisa menyebabkan layarnya jadi mati meskipun mesinnya masih menyala."],
+     "context": [""]
+    },
+    {"tag": "Layar Hp Putih",
+     "patterns": ["Hp saya tiba tiba putih","Layar Hp Saya Putih Semua"],
+     "responses": ["Layar Hp putih bisa jadi dikarenakan oleh masalah pada LCD HP anda, hal ini bisa terjadi karena LCD terkena guncangan, Terkena air, Atau bahan Cain lainnya, sehingga dapat menyebabkan masalah pada layar LCD. Untuk Solusi Masalah Anda, anda dapat Menuju Ke Konter Terdekat Untuk Mengganti LCD Anda"],
+     "context": [""]
+    },
+    {"tag": "Layar Menyala Tidak Booting",
+     "patterns": ["mengapa hp saya menyala namun tidak masuk menu","mengapa hp saya tidak masuk boot system","mengapa hp saya stuck pada logo recovery"],
+     "responses": ["Hal Tersebut disebabkan oleh firmwire dari device tersebut, jika maslalah tak kunjung usai berarti masalah anda terletak pada chip penyimpanan yang telah usang. disarankan untuk mengganti chip tersebut dengan yang baru"],
+     "context": [""]
+    },
+    {
+        "tag":"layar laptop",
+        "patterns":["layar laptop hitam , indikator menyala","layar tidak menampilkan gambar"],
+        "responses":[
+          "Masalah ini bisa disebabkan oleh beberapa faktor. Silakan coba langkah-langkah berikut: Matikan laptop dengan menekan tombol daya secara tahan hingga laptop benar-benar mati. Kemudian, lepaskan semua sumber daya seperti adaptor dan baterai (jika mungkin). Tunggu beberapa saat, kemudian pasang kembali adaptor dan baterai. Nyalakan kembali laptop. Periksa apakah layar laptop kembali berfungsi normal. Jika langkah sebelumnya tidak berhasil, cobalah menghubungkan laptop ke monitor eksternal menggunakan kabel VGA atau HDMI. Jika tampilan muncul di monitor eksternal, kemungkinan masalah ada pada layar laptop atau koneksi layar internal."
+          ],
+          "context": [""]
+      },  
+      {
+        "tag":"software laptop",
+        "patterns":["muncul logo windows","muncul tampilan biru","virus"],
+        "responses":[
+            "Jika muncul logo windows namun tidak bergerak , pastikan harddisk atau penyimpanan terbaca dahulu di dalam bios , jika sudah coba booting dengan sistem operasi lain",
+            "jika muncul tampilan biru , catat kode yang muncul , kemudian cari kode tersebut di mesin pencarian , biasanya kode error spesifik kepada permasalahan tertentu",
+            "jika virus terdeteksi oleh antivirus dan tidak menyebabkan kerusakan sistem jalankan scan pada antivirus , jika sudah menyangkut ranah sistem pengguna disarankan untuk menginstall kembali sistem operasi"
+          ],
+          "context": [""]
+      }
+    
+]
+}
